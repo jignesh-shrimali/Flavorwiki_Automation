@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuit"  thread-count="2" parallel="tests">
+
+  <test name="RunningOnChrome" thread-count="4" parallel='classes'>
+	  <parameter name="node" value="local" /> 		<!-- node value can be :  local or node url -->
+	  <parameter name="browser" value="chrome" />	<!-- browser value can be : chrome ,ie ,firefox -->
+	    <classes>
+	   	   <class name="Flavorwiki.tests.login.LoginTests"/>
+	    </classes>
+  </test>
+  
+</suite> <!-- Suite -->
