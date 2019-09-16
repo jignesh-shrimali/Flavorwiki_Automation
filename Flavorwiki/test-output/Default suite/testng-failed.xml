@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AER.FMDP_Automation.tests.login.LoginTests">
+      <class name="Flavorwiki.tests.login.LoginTests">
         <methods>
-          <include name="login_Success"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="login_Success"/>
           <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="login_Failure"/>
         </methods>
-      </class> <!-- AER.FMDP_Automation.tests.login.LoginTests -->
+      </class> <!-- Flavorwiki.tests.login.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

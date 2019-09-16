@@ -38,6 +38,20 @@ public class TopNavigationPO
 	 * @FindBy can accept tagName, partialLinkText, name, linkText, id, css, className, xpath as attributes.
 	 */ 	
 	
+	//Left Menu Items
+	
+		@FindBy(css=".ant-layout-sider-children > ul > li:nth-of-type(1)")
+		public WebElement dashboard;
+	
+		@FindBy(css=".ant-layout-sider-children > ul > li:nth-of-type(2)")
+		public WebElement surveys;
+		
+		@FindBy(css=".ant-layout-sider-children > ul > li:nth-of-type(3)")
+		public WebElement termsofuse;
+		
+		@FindBy(css=".ant-layout-sider-children > ul > li:nth-of-type(4)")
+		public WebElement privacypolicy;
+	
 	//Menu Items
 	
 		@FindBy(css=".topnav> ul > li:nth-of-type(1) > a")
@@ -176,7 +190,32 @@ public class TopNavigationPO
 		
 		@FindBy(css="div.menuItems a[href='#client_import']")
 		public WebElement ClientImportTile;
-            
+
+		
+		
+		
+	//Left Menu
+		public void clickOnDashboard()
+		{
+			dashboard.click();
+		}
+		
+		public void clickOnSurveys()
+		{
+			surveys.click();
+		}
+		
+		public void clickOnTermsOfUse()
+		{
+			termsofuse.click();
+		}
+		
+		public void clickOnPrivacyPolicy()
+		{
+			privacypolicy.click();
+		}
+		
+		
 	//Profile Badge
 		public String getLoggedInUserName()
 		{

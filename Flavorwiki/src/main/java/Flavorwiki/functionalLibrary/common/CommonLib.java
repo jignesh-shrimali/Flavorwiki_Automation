@@ -1,6 +1,7 @@
 package Flavorwiki.functionalLibrary.common;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import Flavorwiki.pageObjects.common.CommonPO;
 import utilities.JavaHelpers;
@@ -150,6 +151,16 @@ public class CommonLib
 		common.checkbox_includeDeleteRecord();
 	}
 	
+	//common buttons
+	
+	@FindBy(xpath="ant-btn styles__PrimaryButton-v0kam7-5 btIJwt styles__CustomButtonStyle-v0kam7-0 exqTlp")
+	public WebElement AddstepButton;
+	
+	@FindBy(xpath="//*[@data-testid='new-product-button']")
+	public WebElement NewProdcutButton;
+	
+	@FindBy(xpath="//*[@data-testid='new-step-button']")
+	public WebElement NewStepInSurveyButton;
 	
 	
 	

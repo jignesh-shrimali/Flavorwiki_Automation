@@ -104,6 +104,7 @@ public class CommonPO
 		public WebElement noBtn;		
 		
 		
+		
 		//Progress bar after login
 		By progressBar= By.id("progressBar");
 		
@@ -350,5 +351,10 @@ public class CommonPO
 		{
 			
 		}
+		
+		// common Question text for "Question text" field
+		
+		
+		
 		
 }
