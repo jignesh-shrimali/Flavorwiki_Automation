@@ -14,8 +14,6 @@ import org.testng.asserts.SoftAssert;
 
 import Flavorwiki.functionalLibrary.common.TopNavigationLib;
 import Flavorwiki.functionalLibrary.login.LoginLib;
-import Flavorwiki.pageObjects.common.TopNavigationPO;
-import Flavorwiki.pageObjects.surveys.CreateSurveysPO;
 import utilities.Constants;
 import utilities.ExceptionHandler;
 import utilities.JavaHelpers;
@@ -31,8 +29,6 @@ public class LoginTests
 	private SeleniumHelpers selenium;
 	private SoftAssert sfassert;
 	private ExceptionHandler ex;
-	private TopNavigationPO toppnavigation;
-	private CreateSurveysPO createsurvey;
 	
 	//Test Data
 	private String propertyFile="test-input/login.properties";
@@ -51,8 +47,6 @@ public class LoginTests
 		navigationlib = new TopNavigationLib(driver);
 		loginlib = new LoginLib(driver);
 		selenium = new SeleniumHelpers(driver);
-		toppnavigation=new TopNavigationPO(driver);
-		createsurvey=new CreateSurveysPO(driver);
 	}
 	
 
@@ -62,10 +56,9 @@ public class LoginTests
 		sfassert = new SoftAssert();
 		ex = new ExceptionHandler(driver);
 	}
-	
-	
+		
 	/*Test 1 : Verify that user can't login with incorrect credentials */
-	/*@Test (priority = 1)
+	@Test (priority = 1)
 	public void login_Failure() throws IOException
 	{
 		try {
@@ -89,7 +82,7 @@ public class LoginTests
 	}
 	
 	
-	Test 2 : Verify that user can login/logout/change password successfully
+	/*Test 2 : Verify that user can login/logout/change password successfully*/
 	@Test (priority = 2)
 	public void login_Success() throws IOException
 	{
@@ -112,39 +105,8 @@ public class LoginTests
 		{
 			ex.TakeScreenshotAndLogException(e.getMessage());
 		}
-	}*/
-	
-	/*Test 3: Create Survey - Verify all mandatory text fields with valid data in "basic info" tab*/
-	@Test(priority = 3)
-	public void valid_basicinfo()throws IOException
-	{
-		try
-		{
-			Reporter.log("Step 1 = Enter valid URL");
-			driver.get("http://flavorwiki-staging.s3-website-eu-west-1.amazonaws.com/onboarding/login");
-			
-			Reporter.log("Step 2 = Signed in with valid credentials.");
-			loginlib.loginToApplication("kmtank.qa@gmail.com", "Admin@123");
-			
-			Reporter.log("Step 3 = Click on Survey option from the side menu.");
-			toppnavigation.clickOnSurveys();
-			
-			Reporter.log("Step 4 = Click on Create Survey button");
-			createsurvey.ClickCreateSurveyButton();
-			
-			Reporter.log("Step 5 = Enter valid data in mandatory fields");
-			createsurvey.EnterNameBasicInfo();
-			
-			
-		}
-		catch (AssertionError|Exception e) {
-			
-			ex.TakeScreenshotAndLogException(e.getMessage());
-			
-		}
 	}
 	
-
 	
 	
 	@AfterClass

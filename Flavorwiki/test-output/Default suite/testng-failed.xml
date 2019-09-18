@@ -6,10 +6,9 @@
       <class name="Flavorwiki.tests.login.LoginTests">
         <methods>
           <include name="setUp"/>
-          <include name="login_Success"/>
+          <include name="invalid_basicinfo"/>
           <include name="beforeMethod"/>
           <include name="tearDown"/>
-          <include name="login_Failure"/>
         </methods>
       </class> <!-- Flavorwiki.tests.login.LoginTests -->
     </classes>
