@@ -18,7 +18,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.io.Files;
 
 public class SeleniumHelpers 
-{
+{         
+	
 	WebDriver driver;
 	JavaHelpers helper;
 	

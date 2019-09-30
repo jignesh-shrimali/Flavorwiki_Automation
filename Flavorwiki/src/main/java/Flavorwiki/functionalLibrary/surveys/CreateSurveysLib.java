@@ -21,21 +21,10 @@ public class CreateSurveysLib {
 	        selenium = new SeleniumHelpers(driver);
 	        surveypo = new CreateSurveysPO(driver);
 	        common = new CommonLib(driver);
-
 	}
 	 
-	 public void AddBasicInfo(String EnterInfoName) {
-		 surveypo.EnterInfoName(EnterInfoName);
-		  }
+
 	 
 	 
-	 public void AddProducts(String ProductName,String BrandName) {
-		 surveypo.Products(ProductName,BrandName);
-		 }
-	 
-	 public void AddQuestion() {
-		 surveypo.ChooseDateQustion();
-		 
-	 }
 
 }

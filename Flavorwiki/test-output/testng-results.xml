@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Step 1 = Enter valid URL]]>
+      <![CDATA[Step 1=Enter valid url]]>
     </line>
     <line>
       <![CDATA[Step 2 = Signed in with valid credentials.]]>
@@ -14,15 +14,33 @@
       <![CDATA[Step 4 = Click on Create Survey button]]>
     </line>
     <line>
-      <![CDATA[Enter valid name of the survey in Name field]]>
+      <![CDATA[Step 5 = Enter valid data in mandatory fields]]>
+    </line>
+    <line>
+      <![CDATA[Step 6= Click on Product and add product]]>
+    </line>
+    <line>
+      <![CDATA[Step 7= Click On Screening and fill data]]>
+    </line>
+    <line>
+      <![CDATA[Step 8 = Click On Before product selection]]>
+    </line>
+    <line>
+      <![CDATA[Step 9 = Click on Tasting loop]]>
+    </line>
+    <line>
+      <![CDATA[Step 10 = Click on After tasting]]>
+    </line>
+    <line>
+      <![CDATA[Step 8 = Click Publish button]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16013" started-at="2019-09-18T05:04:46Z" finished-at="2019-09-18T05:05:02Z">
+  <suite name="Default suite" duration-ms="63691" started-at="2019-09-30T11:18:52Z" finished-at="2019-09-30T11:19:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16013" started-at="2019-09-18T05:04:46Z" finished-at="2019-09-18T05:05:02Z">
-      <class name="Flavorwiki.tests.login.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:Flavorwiki.tests.login.LoginTests@448ff1a8]" name="setUp" is-config="true" duration-ms="4048" started-at="2019-09-18T05:04:46Z" finished-at="2019-09-18T05:04:50Z">
+    <test name="Default test" duration-ms="63691" started-at="2019-09-30T11:18:52Z" finished-at="2019-09-30T11:19:55Z">
+      <class name="Flavorwiki.tests.surveys.SurveysTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:Flavorwiki.tests.surveys.SurveysTests@448ff1a8]" name="setUp" is-config="true" duration-ms="10008" started-at="2019-09-30T11:18:52Z" finished-at="2019-09-30T11:19:02Z">
           <params>
             <param index="0">
               <value>
@@ -38,14 +56,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Flavorwiki.tests.login.LoginTests@448ff1a8]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2019-09-18T05:04:50Z" finished-at="2019-09-18T05:04:50Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Flavorwiki.tests.surveys.SurveysTests@448ff1a8]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2019-09-30T11:19:02Z" finished-at="2019-09-30T11:19:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Unique_Name()[pri:5, instance:Flavorwiki.tests.login.LoginTests@448ff1a8]" name="Unique_Name" duration-ms="11170" started-at="2019-09-18T05:04:50Z" finished-at="2019-09-18T05:05:01Z">
+        <test-method status="PASS" signature="create_survey()[pri:3, instance:Flavorwiki.tests.surveys.SurveysTests@448ff1a8]" name="create_survey" duration-ms="52862" started-at="2019-09-30T11:19:02Z" finished-at="2019-09-30T11:19:55Z">
           <reporter-output>
             <line>
-              <![CDATA[Step 1 = Enter valid URL]]>
+              <![CDATA[Step 1=Enter valid url]]>
             </line>
             <line>
               <![CDATA[Step 2 = Signed in with valid credentials.]]>
@@ -57,15 +75,33 @@
               <![CDATA[Step 4 = Click on Create Survey button]]>
             </line>
             <line>
-              <![CDATA[Enter valid name of the survey in Name field]]>
+              <![CDATA[Step 5 = Enter valid data in mandatory fields]]>
+            </line>
+            <line>
+              <![CDATA[Step 6= Click on Product and add product]]>
+            </line>
+            <line>
+              <![CDATA[Step 7= Click On Screening and fill data]]>
+            </line>
+            <line>
+              <![CDATA[Step 8 = Click On Before product selection]]>
+            </line>
+            <line>
+              <![CDATA[Step 9 = Click on Tasting loop]]>
+            </line>
+            <line>
+              <![CDATA[Step 10 = Click on After tasting]]>
+            </line>
+            <line>
+              <![CDATA[Step 8 = Click Publish button]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Unique_Name -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Flavorwiki.tests.login.LoginTests@448ff1a8]" name="tearDown" is-config="true" duration-ms="642" started-at="2019-09-18T05:05:01Z" finished-at="2019-09-18T05:05:02Z">
+        </test-method> <!-- create_survey -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Flavorwiki.tests.surveys.SurveysTests@448ff1a8]" name="tearDown" is-config="true" duration-ms="643" started-at="2019-09-30T11:19:55Z" finished-at="2019-09-30T11:19:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Flavorwiki.tests.login.LoginTests -->
+      </class> <!-- Flavorwiki.tests.surveys.SurveysTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

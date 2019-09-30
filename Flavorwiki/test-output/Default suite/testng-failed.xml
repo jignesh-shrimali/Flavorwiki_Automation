@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Flavorwiki.tests.login.LoginTests">
+      <class name="Flavorwiki.tests.surveys.SurveysTests">
         <methods>
           <include name="setUp"/>
-          <include name="invalid_basicinfo"/>
+          <include name="create_survey"/>
           <include name="beforeMethod"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Flavorwiki.tests.login.LoginTests -->
+      </class> <!-- Flavorwiki.tests.surveys.SurveysTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
