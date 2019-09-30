@@ -157,7 +157,7 @@ public class SurveysTests
 			
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
-			Reporter.log("Step 7= Click On Screening and fill data");
+			Reporter.log("Step 7= Click On Screening and enter valid data in mandatory fields");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			createsurvey.ClickOnScreening();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -170,17 +170,17 @@ public class SurveysTests
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
-			Reporter.log("Step 8 = Click On Before product selection");
+			Reporter.log("Step 8 = Click On Before product selection and enter valid data in mandatory fields");
 			createsurvey.ClickOnBeforeProductSection();
 			createsurvey.ClickOnNewStepButton();
 			createsurvey.Select_TypeOfQuestion_ChooseEmail();
 			  
-			 Reporter.log("Step 9 = Click on Tasting loop");
+			 Reporter.log("Step 9 = Click on Tasting loop and Enter valid data in mandatory fields");
 			 createsurvey.ClickOnTastingLoop();
 			 createsurvey.ClickOnNewStepButton();
 			 createsurvey.Select_TypeOfQuestion_ChooseMultiple();
 			  
-			 Reporter.log("Step 10 = Click on After tasting");
+			 Reporter.log("Step 10 = Click on After tasting and enter valid data in mandatory fields");
 			 createsurvey.ClickOnAftertasting();
 			 Thread.sleep(4000);
 			 createsurvey.ClickOnNewStepButton(); 
